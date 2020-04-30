@@ -1,0 +1,149 @@
+/* 待确认订单详情 */
+.order-pending-detail-page {
+  .comfirm-form {
+    margin-top: 30px;
+    .el-input {
+      width: 300px;
+    }
+  }
+  /* 收款账户 */
+  .receiving-party {
+    .receiving-label {
+      display: inline-block;
+      width: 80px;
+      color: var(--base-gray-color);
+      text-align: right;
+    }
+  }
+}
+
+/* 添加煤矿地图 */
+.amap-wrapper {
+  margin-left: 100px;
+  width: 764px;
+  height: 400px;
+  position: relative;
+}
+/* 煤矿账户管理 */
+.coalmine-account-mng-page {
+  position: relative;
+  padding-bottom: 40px;
+}
+/* 添加煤矿账户 */
+.addAccount-content {
+  .addAccount-form-content {
+    padding: 10px;
+    .panels {
+      .el-input {
+        width: 400px;
+      }
+    }
+  }
+}
+/*价格优惠配置新增*/
+.page-discount-rule-add {
+  .discount-form .el-input {
+    width: 160px;
+  }
+  .suffix-unit {
+    line-height: 35px;
+    padding-right: 3px;
+  }
+  .discount-form {
+    .discount-price {
+      margin-left: 120px;
+      .el-input {
+        width: 200px;
+      }
+    }
+    .discount-price:last-child {
+      margin-left: 0;
+    }
+    .del-range-btn {
+      margin: 2px 0 0 10px;
+    }
+  }
+  .segment {
+    .segment-header {
+      .del-bold {
+        font-weight: 400;
+      }
+    }
+  }
+}
+/*新增商户表单*/
+.page-addAccount {
+  .page-addAccount-form-content {
+    padding: 0 10px;
+    .el-form {
+      .el-input {
+        width: 240px;
+      }
+    }
+    .remove-label-left {
+      padding: 0 10px;
+      .el-form-item__content {
+        margin-left: 0 !important;
+      }
+    }
+    .el-radio {
+      margin-right: 20px;
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+    }
+    .bank-account-section {
+      .el-input {
+        width: 300px;
+      }
+    }
+    .upload-tips {
+      text-align: left;
+      margin: 10px 0 10px 38px;
+    }
+  }
+}
+/* 贸易凭证 */
+.trade-certform-page {
+  .table-col-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  .table-col-img + .table-col-img {
+    margin-left: 10px;
+  }
+}
+/* 运单详情 */
+.waybill-detail-page {
+  .segment {
+    .segment-label {
+      width: 90px;
+    }
+  }
+  .segment-item-ellipsis {
+    .segment-content {
+      padding-left: 90px;
+    }
+  }
+}
+/* 商品基础数据添加 */
+.base-goods-form {
+  .el-input {
+    width: 300px;
+  }
+  .el-select {
+    width: 300px;
+    .el-input {
+      width: 100%;
+    }
+  }
+}
+.base-goods-form-page {
+  .footer-btn-panel {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
