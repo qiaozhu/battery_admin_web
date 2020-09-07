@@ -21,7 +21,7 @@ const config = {
   // 生产配置
   prod: {
     publicKey: publicKey.prod,
-    baseURL: 'https://www.qiaodev.com/api',
+    baseURL: 'https://www.qiaodev.com/api/battery',
     uploadURL: 'https://boot-service.sijibao.com',
     env: 'prod'
   }
