@@ -98,18 +98,18 @@ export default {
       pwdInputType: 'text',
       loginForm: {
         account: '',
-        password: ''
+        password: '',
       },
       rules: {
         account: [{ required: true, message: '请输入ldap用户名', trigger: 'blur' }],
-        password: [{ required: true, message: '请输入ldap用户密码', trigger: 'blur' }]
-      }
+        password: [{ required: true, message: '请输入ldap用户密码', trigger: 'blur' }],
+      },
     };
   },
   computed: {
     pwdLength() {
       return this.loginForm.password.length;
-    }
+    },
   },
   created() {
     // zhu.qiao
@@ -124,7 +124,8 @@ export default {
           // 登录
           let result = await axios.post(api.login, {
             account: this.loginForm.account,
-            password: JSEncrypt.encrypt(this.loginForm.password) // 密码rsa加密
+            password: this.loginForm.password,
+            // password: JSEncrypt.encrypt(this.loginForm.password) // 密码rsa加密
           });
           // 存储登录凭证
           localStorage.setItem('Authorization', result.data);
@@ -165,8 +166,8 @@ export default {
         range.move('character', this.pwdLength);
         range.select();
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="postcss">
