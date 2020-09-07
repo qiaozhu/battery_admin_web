@@ -21,7 +21,7 @@ const config = {
   // 生产配置
   prod: {
     publicKey: publicKey.prod,
-    baseURL: 'http://running1.coalscc.com/gyl-bop-web',
+    baseURL: 'https://www.qiaodev.com/api',
     uploadURL: 'https://boot-service.sijibao.com',
     env: 'prod'
   }
