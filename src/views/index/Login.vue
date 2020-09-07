@@ -124,8 +124,7 @@ export default {
           // 登录
           let result = await axios.post(api.login, {
             account: this.loginForm.account,
-            password: this.loginForm.password,
-            // password: JSEncrypt.encrypt(this.loginForm.password) // 密码rsa加密
+            password: this.loginForm.password, // 密码rsa加密
           });
           // 存储登录凭证
           localStorage.setItem('Authorization', result.data);
